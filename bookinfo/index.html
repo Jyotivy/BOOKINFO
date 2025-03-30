@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Platform</title>
+    <link rel="stylesheet" href="style.css">
+    
+        
+</head>
+<body>
+    <div class="container">
+        <h2>📚 Book Review Platform</h2>
+        <form id="postForm">
+            <div class="m1">
+                <label for="title" class="form-label">Book Title:</label>
+                <input type="text" id="title" class="form-control" placeholder="Enter book title" required>
+            </div><br>
+            <div class="m2">
+                <label for="author" class="form-label">Author:</label>
+                <input type="text" id="author" class="form-control" placeholder="Enter author's name" required>
+            </div>
+            <br>
+            <div class="m3">
+                <label for="content" class="form-label">Review:</label>
+                <textarea id="content" class="form-control" rows="3" placeholder="Write your review here..." required></textarea>
+            </div>
+            <br>
+            <div class=" m4">
+                <label class="form-label">Rating</label>
+                <div class="star-rating" id="starRating">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <input type="hidden" id="rating" value="1">
+            </div>
+            <button type="submit" class="primary">Add Review</button>
+        </form>
+    </div>
+    
+   <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    width:500px;
+    background: rgb(250, 153, 156);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size:20px ;
+    padding-right: 70px;
+    row-gap: 4px;
+    
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #222;
+    font-size:40px
+}
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #ff758c;
+    padding-bottom: 10px;
+    padding: 9px;
+    font-size: 19px;
+    background-color: #ffe4e1;
+    color: #222;
+    text-align: left;
+}
+.form-control:focus {
+    border-color: #ff3d68;
+    box-shadow: 0px 0px 8px rgba(255, 61, 104, 0.7);
+    background-color: #fff5f5;
+
+}
+.primary {
+    background-color: #ff3d68;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.primary:hover {
+    background-color: #e62e5a;
+}
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5px;
+}
+.star-rating span {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.star-rating span.selected,
+.star-rating span:hover,
+.star-rating span:hover span {
+    color: gold;
+}
+.m4{
+    text-align:center;
+    padding-right: 30px;
+}
